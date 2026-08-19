@@ -42,6 +42,8 @@ result = model.invoke(prompt)
 reply = result.content[0]["text"]
 reply = reply.replace("**", "")
 
+print(reply)
+
 body = "Subject: Latest Business News\n\n" + reply + "\n\n"
 
 body = body.encode("utf-8")
